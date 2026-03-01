@@ -1,0 +1,105 @@
+HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Web Development Workshop</h1>
+    <p>A workshop on web development basics, covering HTML, CSS, and JavaScript.</p>
+    
+    <h2>Event Information</h2>
+    <ul>
+        <li>Date: 12th March 2026</li>
+        <li>Time: 10:00 AM - 4:00 PM</li>
+        <li>Venue: ABC Engineering College</li>
+        <li>Organizer: Department of Computer Science</li>
+    </ul>
+    
+    <h2>Registration Form</h2>
+    <form id="registration-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" required><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Event Selection</legend>
+            <label for="event">Event:</label>
+            <select id="event">
+                <option value="web-dev">Web Development Workshop</option>
+                <option value="data-science">Data Science Workshop</option>
+            </select><br><br>
+            <label for="mode">Mode of Participation:</label>
+            <input type="radio" id="online" name="mode" value="online">
+            <label for="online">Online</label>
+            <input type="radio" id="offline" name="mode" value="offline">
+            <label for="offline">Offline</label><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional Details</legend>
+            <label for="college">College / Company Name:</label>
+            <input type="text" id="college"><br><br>
+            <label for="id-proof">Upload ID Proof:</label>
+            <input type="file" id="id-proof"><br><br>
+            <label for="comments">Comments / Expectations:</label>
+            <textarea id="comments"></textarea><br><br>
+        </fieldset>
+        
+        <label>
+            <input type="checkbox" id="declaration" required>
+            I confirm that the above details are correct.
+        </label><br><br>
+        <button id="submit-btn">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    
+    <h2>Registered Participants</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Event</th>
+                <th>Mode</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>XYZ</td>
+                <td>xyz@gmail.com</td>
+                <td>9876543210</td>
+                <td>Web Development Workshop</td>
+                <td>Offline</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <footer>
+        <p>Contact Email: events@abccollege.edu</p>
+        <p>Help Desk Number: +91 94444 12345</p>
+        <p>Copyright: 2026 Department of Computer Science, ABC Engineering College. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
